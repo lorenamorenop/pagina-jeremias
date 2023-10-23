@@ -35,6 +35,7 @@ h1{
 .nombre h1 {
   padding-top: 30px;
   font-size: 40px;
+  letter-spacing: 6px;
 }
 
 
@@ -88,7 +89,7 @@ header .navbar {
     grid-template-rows: repeat(4, 500px);
     justify-content: center;
     column-gap: 10px;
-    border: 1px solid black;
+    row-gap: 10px;
   }
   .contenedor-polas .pola {
     -o-object-fit: cover;
@@ -96,8 +97,6 @@ header .navbar {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    margin-top: 40px;
-    column-gap: 50px;
     border: 1px solid black;
   }
   .contenedor-polas .pola1 {
@@ -143,17 +142,17 @@ header .navbar {
   .contenedor-polas .pola9 {
     grid-column: 3/4;
     grid-row: 3/4;
-    background-image: url();
+    background-image: url(../imagenes/jere25.jpg);
   }
   .contenedor-polas .pola10 {
     grid-column: 1/2;
     grid-row: 4/5;
-    background-image: url();
+    background-image: url(../imagenes/jere23.jpg);
   }
   .contenedor-polas .pola11 {
     grid-column: 2/3;
     grid-row: 4/5;
-    background-image: url();
+    background-image: url(../imagenes/jere1.jpg);
   }
   .contenedor-polas .pola12 {
     grid-column: 3/4;
