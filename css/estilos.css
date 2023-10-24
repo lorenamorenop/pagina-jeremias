@@ -37,9 +37,28 @@ h1{
     font-size: 40px;
     letter-spacing: 6px;
 }
-
-
-
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+.sobreMi{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.boton {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(20, 113, 30, 0.708);
+}
 /* FIN ESTILOS GENERALES */
 /* INICIO NAVBAR */
 header .navbar {
@@ -62,7 +81,7 @@ header .navbar {
     content: "";
     width: 0;
     height: 2px;
-    background-color: #615ebb;
+    background-color:rgba(20, 113, 30, 0.708);
     position: absolute;
     bottom: 0;
     right: 50%;
@@ -158,6 +177,28 @@ header .navbar {
     grid-row: 4/5;
     background-image: url(../imagenes/jere3b.jpg);
 }
+/* INICIO CONTACTO */
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: repeat(1, 500px);
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.contenedor-contacto .contacto {
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-contacto .contacto1 {
+    background-image: url(../imagenes/jerepizza.jpg);
+}
+
+/* FIN CONTACTO */
 
 /* Inicio FOOTER */
 footer {
