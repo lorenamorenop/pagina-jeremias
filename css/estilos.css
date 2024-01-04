@@ -6,6 +6,7 @@ font-family: 'Inclusive Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;
 */
+
 * {
     margin: 0;
     padding: 0;
@@ -104,7 +105,7 @@ header .navbar {
 .contenedor-polas {
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(4, 500px);
+    grid-template-rows: repeat(3, 500px);
     justify-content: center;
     column-gap: 10px;
     row-gap: 10px;
@@ -162,21 +163,25 @@ header .navbar {
     grid-row: 3/4;
     background-image: url(../imagenes/jere25.jpg);
 }
-.contenedor-polas .pola10 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    background-image: url(../imagenes/jere23.jpg);
+/* INICIO GALERIA  */
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 500px);
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
 }
-.contenedor-polas .pola11 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    background-image: url(../imagenes/jere1.jpg);
+.contenedor-galeria .caja {
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
 }
-.contenedor-polas .pola12 {
-    grid-column: 3/4;
-    grid-row: 4/5;
-    background-image: url(../imagenes/jere3b.jpg);
-}
+/* FIN GALERIA  */
 /* INICIO CONTACTO */
 
 .contenedor-contacto {
@@ -225,4 +230,63 @@ footer p {
     font-size: 18px;
     font-family: "Inclusive Sans", sans-serif;
     margin-top: 100px;
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px){
+    .contenedor-polas {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(10, 500px);
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .contenedor-polas .pola1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(../imagenes/jere18.jpg);
+    }
+    .contenedor-polas .pola2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(../imagenes/jere16.jpg);
+    }
+    .contenedor-polas .pola3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url(../imagenes/jere15.jpg);
+    }
+    .contenedor-polas .pola4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-image: url(../imagenes/jere19.jpg);
+    }
+    .contenedor-polas .pola5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-image: url(../imagenes/jere17.jpg);
+    }
+    .contenedor-polas .pola6 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        background-image: url(../imagenes/jere20.jpg);
+    }
+    .contenedor-polas .pola7 {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        background-image: url(../imagenes/jere4.jpg);
+    }
+    .contenedor-polas .pola8 {
+        grid-column: 1/2;
+        grid-row: 8/9;
+        background-image: url(../imagenes/jere14.jpg);
+    }
+    .contenedor-polas .pola9 {
+        grid-column: 1/2;
+        grid-row: 9/10;
+        background-image: url(../imagenes/jere25.jpg);
+    }
 }
