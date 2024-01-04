@@ -294,8 +294,9 @@ footer p {
 
     .contenedor-contacto {
         display: grid;
-        grid-template-columns: repeat(1, 500px);
-        grid-template-rows: repeat(2, 300px);
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 350px);
         justify-content: center;
         column-gap: 10px;
         margin-top: 20px;
