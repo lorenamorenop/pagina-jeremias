@@ -239,7 +239,7 @@ footer p {
     .contenedor-polas {
         display: grid;
         grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(10, 500px);
+        grid-template-rows: repeat(9, 500px);
         justify-content: center;
         column-gap: 10px;
         row-gap: 10px;
@@ -288,5 +288,24 @@ footer p {
         grid-column: 1/2;
         grid-row: 9/10;
         background-image: url(../imagenes/jere25.jpg);
+    }
+
+
+
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+    .contenedor-contacto .contacto1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contenedor-contacto .contacto2{
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 }
