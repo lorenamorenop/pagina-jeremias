@@ -58,7 +58,7 @@ h2{
     bottom: 30px;
     font-size: 30px;
     text-align: center;
-    color: rgba(20, 113, 30, 0.708);
+    color: black;
 }
 /* FIN ESTILOS GENERALES */
 /* INICIO NAVBAR */
@@ -82,7 +82,7 @@ header .navbar {
     content: "";
     width: 0;
     height: 2px;
-    background-color:rgba(20, 113, 30, 0.708);
+    background-color: #ba7c3f ;
     position: absolute;
     bottom: 0;
     right: 50%;
@@ -221,7 +221,7 @@ footer .icono {
     transition: transform 0.3s;
 }
 footer .icono:hover {
-    color: #1a1c76;
+    color: #ba7c3f ;
 }
 footer p {
     display: flex;
